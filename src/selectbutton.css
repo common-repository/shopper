@@ -1,0 +1,186 @@
+.spcom_date_sort_select-container {
+    position: relative;
+    width: 13%;
+    min-width: 212px;
+}
+
+.spcom_date_sort_select-container .selected-input {
+    display: flex;
+    padding: 4px 16px;
+    background-color: #f5f5f7;
+    cursor: pointer;
+    border-radius: 32px;
+    justify-content: space-between;
+    /* width: 100%; */
+    height: 40px;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 14px;
+    align-items: center;
+}
+
+.spcom_date_sort_select-container .selected-input .select-input-left {
+    display: flex;
+    align-items: baseline;
+}
+
+.spcom_date_sort_select-container .selected-input .select-input-left .select-input-left-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.spcom_date_sort_select-container .selected-input .select-input-left .select-input-left-text {
+    margin-left: 8px;
+    color: #222;
+    line-height: 18px;
+}
+
+.spcom_date_sort_select-container .selected-input .select-input-left .select-input-right-text {
+    margin-left: 8px;
+}
+
+.spcom_date_sort_select-container .selected-input .select-input-right .select-input-right-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.spcom_date_sort_select-container .selected-input .select-input-right .select-input-right-icon svg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spcom_date_sort_select-container .select-options-container {
+    position: absolute;
+    top: 36px;
+    width: 100%;
+    z-index: -1;
+}
+
+.spcom_date_sort_select-container .select-options-container .select-options-header {
+    display: none;
+}
+
+.spcom_date_sort_select-container .select-options-container .select-options-ul {
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    background-color: #ffff;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.spcom_date_sort_select-container .select-options-container .select-options-ul .select-option-li {
+    cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 8px;
+    color: #222;
+    transition: 0.1s;
+}
+
+.spcom_date_sort_select-container .select-options-container .select-options-ul .select-option-li:hover {
+    background-color: #ffeee4;
+    color: #ff813f;
+}
+
+.spcom_date_sort_select-container .select-options-container .select-options-ul .selectd-option {
+    color: #ff813f;
+}
+
+.spcom_date_sort_select-container .select-options-container .select-options-ul .select-disabled {
+    pointer-events: none;
+    color: #c7c7cc;
+}
+
+.spcom_date_sort_select-container .select-options-container .select-options-ul .select-disabled svg path {
+    fill: #c7c7cc;
+}
+
+.spcom_date_sort_select-container-active .selected-input {
+    box-shadow: 0px 13px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    background-color: #fff f;
+}
+
+@media only screen and (max-width: 414px) {
+    /* .spcom_date_sort_select-container .select-options-container {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        background-color: #19203960;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    } */
+
+    /* .spcom_date_sort_select-container .select-options-container .select-options-container-content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: #ffff;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+    } */
+
+    .spcom_date_sort_select-container .select-options-container .select-options-container-content .select-options-header {
+        display: flex;
+        padding: 26px 10px 10px 10px;
+        align-items: center;
+    }
+
+    .spcom_date_sort_select-container .select-options-container .select-options-container-content .select-options-header .select-options-header-text {
+        width: 90%;
+        padding-left: 9%;
+        text-align: center;
+        font-size: 18px;
+        line-height: 23px;
+        color: #222;
+    }
+
+    .spcom_date_sort_select-container .select-options-container .select-options-container-content .select-options-header .select-options-header-close {
+        width: 32px;
+        height: 32px;
+        padding: 9px;
+    }
+
+    .spcom_date_sort_select-container .select-options-container .select-options-container-content .select-options-header .select-options-header-close svg,
+    .spcom_date_sort_select-container .select-options-container .select-options-container-content .select-options-header .select-options-header-close path {
+        width: 14px;
+        height: 14px;
+    }
+
+    .spcom_date_sort_select-container .select-options-container .select-options-container-content .select-options-ul-container {
+        padding: 10px;
+    }
+
+    /* .spcom_date_sort_select-container .select-options-container .select-options-container-content .select-options-ul-container .select-options-ul {
+        border-radius: unset;
+        box-shadow: unset;
+        width: 100%;
+        border-top: 0.8px solid #e5e5ea;
+    } */
+}
+
+._select_popover {
+    z-index: 51;
+}
+
+._select_popover .selected-input {
+    height: 36px;
+    padding: 0 10px;
+    align-items: center;
+    width: 100%;
+}
+
+._select_popover .select-options-container {
+    width: 100%;
+}
+
+._select_popover .selected-input .select-input-left .select-input-left-text {
+    font-size: 14px;
+}
+
+._select_popover .select-options-container .select-options-ul {
+    width: 100%;
+}

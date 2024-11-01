@@ -1,0 +1,343 @@
+.sp_com_parent {
+  width: 100%;
+  overflow: hidden;
+  padding-right: 20px;
+}
+
+.sp_com_slider-container {
+  /* if you want to have a scrollbar, you can add overflow here */
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  scroll-behavior: smooth;
+  padding-left: 12px;
+}
+
+.sp_com_slider-wrapper {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+  scroll-behavior: smooth;
+}
+
+.sp_com_slider-wrapper::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+.sp_com_prod_scroll_btn {
+  position: absolute;
+  box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  background: #fff;
+  text-align: center;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sp_com_slider-wrapper .child {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sp_com_slider-wrapper .child:not(:first-child) {
+  margin-left: 12px;
+}
+
+.sp_com_prod_scroll_btn .spcom-carasoul-btn {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-content: center;
+}
+
+.sp_com_prod_scroll_btn .spcom-carasoul-btn svg {
+  fill: none;
+}
+
+@media (max-width: 414px) {
+  .sp_com_parent {
+    padding-right: 0px;
+  }
+
+  .sp_com_slider-container {
+    padding-left: 0;
+    overflow-x: auto;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 1024px) {
+  .sp_com_slider-wrapper .child:not(:first-child) {
+    margin-left: 19px;
+  }
+}
+
+.spcom_embedded-collection {
+  width: 100%;
+  /* margin: 0 auto; */
+  padding: 10px;
+}
+
+.spcom_embedded-collection .spcom_collection-cover-container {
+  margin-bottom: 2%;
+}
+
+.spcom_embedded-collection .spcom_collection-cover-container .spcom_collection-cover-landscape {
+  height: auto;
+  width: 100%;
+}
+
+.spcom_embedded-collection .spcom_collection-cover-container .spcom_collection-cover-landscape img {
+  width: 100%;
+  max-height: 350px;
+}
+
+.spcom_embedded-collection .spcom_collection-cover-container img {
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.spcom_embedded-collection .spcom_collection-cover-container .collection-cover-potrait {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 400px;
+  max-height: 500px;
+}
+
+.spcom_embedded-collection .spcom_embedded-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: left;
+  line-height: 140%;
+  color: #000;
+  max-width: 100%;
+  margin: 0 auto 2% auto;
+  cursor: pointer;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  /* margin: 0 auto; */
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list .prev {
+  left: -45px;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list .next {
+  right: -45px;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list .sp_com_parent {
+  padding-right: 0px;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list .child:not(:first-child) {
+  margin-left: 12px;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list .sp_com_slider-container {
+  padding-left: 0px;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list .sp_com_slider-container .btn {
+  z-index: 2;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list .sp_com_slider-container .sp_com_slider-wrapper {
+  width: 100%;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list .sp_com_embedded-collection-product-item {
+  width: 90px;
+  height: 100px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  min-width: 100px;
+  object-fit: cover;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list .sp_com_embedded-collection-product-item img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list .sp_com_embedded-collection-product-item .embed-shopper-logo {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  bottom: 5%;
+  left: 5%;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.1rem;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list .sp_com_embedded-collection-product-item .embed-shopper-logo img {
+  width: 70%;
+  height: auto;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list .sp_com_embedded-collection-product-item .embed-shop-details {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  top: 0.5rem;
+  right: 0.5rem;
+  max-width: 90%;
+  overflow: hidden;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list .sp_com_embedded-collection-product-item .embed-shop-details .collection-card-action-second .collection-type {
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  height: unset;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list .sp_com_embedded-collection-product-item .embed-shop-details .collection-card-action-second .collection-type .collection-type-store-name {
+  font-size: 1rem;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list .sp_com_embedded-collection-product-item .embed-shop-details .collection-card-action-second .collection-type .collection-type-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list.carousel-small .btn {
+  width: 16px;
+  height: 16px;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list.carousel-medium .btn {
+  width: 24px;
+  height: 34px;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list.carousel-large .btn {
+  width: 42px;
+  height: 42px;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list.btn-centre .btn {
+  margin-top: -0.5rem;
+  margin-left: -32px;
+  margin-right: -32px;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list .sp_com_embedded-collection-product-name {
+  font-size: 14px;
+  line-height: 140%;
+  max-width: 100%;
+  text-align: center;
+  cursor: pointer;
+  color: #000;
+  margin-top: 6px;
+}
+
+.spcom_embedded-collection .spcom_embedded-collection-product-list.without-cover .sp_com_slider-container .sp_com_slider-wrapper {
+  margin: 0;
+  width: 100%;
+}
+
+.embed-preview-collection .spcom_embedded-collection .spcom_embedded-title {
+  max-width: 100%;
+}
+
+.embed-preview-collection .spcom_embedded-collection .spcom_collection-cover-container {
+  position: relative;
+}
+
+.embed-preview-collection .spcom_embedded-collection .spcom_collection-cover-container .collection-cover-potrait {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.embed-preview-collection .spcom_embedded-collection .carousel-small .btn {
+  width: 16px;
+  height: 16px;
+}
+
+.embed-preview-collection .spcom_embedded-collection .carousel-medium .btn {
+  width: 22px;
+  height: 22px;
+}
+
+.embed-preview-collection .spcom_embedded-collection .carousel-large .btn {
+  width: 32px;
+  height: 32px;
+}
+
+.spcom_embedded-collection-landscape .spcom_collection-cover-container {
+  position: relative;
+}
+
+.spcom_embedded-collection-landscape .spcom_collection-cover-container .spcom_collection-cover-landscape {
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+}
+
+.embedded-collection-portrait .spcom_embedded-collection-product-list,
+.embedded-collection-portrait .spcom_embedded-title {
+  max-width: 400px;
+}
+
+.embedded-collection-portrait .spcom_collection-cover-container {
+  position: relative;
+}
+
+.embedded-collection-portrait .spcom_collection-cover-container .collection-cover-potrait {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.embedded-collection-portrait.spcom_embedded-collection-percentage .spcom_embedded-collection-product-list,
+.embedded-collection-portrait.spcom_embedded-collection-percentage .spcom_embedded-title {
+  max-width: unset;
+}
+
+.embedded-collection-portrait-no-cover .spcom_embedded-collection-product-list,
+.embedded-collection-portrait-no-cover .spcom_embedded-title {
+  max-width: 100%;
+}
+
+@media (max-width: 428px) {
+  .sp_com_prod_scroll_btn {
+    width: 22px;
+    height: 22px;
+  }
+
+  .spcom_embedded-collection .spcom_embedded-collection-product-list .prev {
+    left: -23px;
+  }
+
+  .spcom_embedded-collection .spcom_embedded-collection-product-list .next {
+    right: -23px;
+  }
+}
